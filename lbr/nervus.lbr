@@ -685,8 +685,40 @@ http://cds.linear.com/docs/Datasheet/1963fc.pdf</description>
 <text x="-4.572" y="-8.89" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="6.35" y="-8.89" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
+<package name="SMB-403A">
+<description>&lt;B&gt;DIODE&lt;/B&gt;</description>
+<wire x1="-2.2606" y1="1.905" x2="2.2606" y2="1.905" width="0.1016" layer="21"/>
+<wire x1="-2.2606" y1="-1.905" x2="2.2606" y2="-1.905" width="0.1016" layer="21"/>
+<wire x1="-2.2606" y1="-1.905" x2="-2.2606" y2="1.905" width="0.1016" layer="51"/>
+<wire x1="2.2606" y1="-1.905" x2="2.2606" y2="1.905" width="0.1016" layer="51"/>
+<wire x1="0.193" y1="1" x2="-0.83" y2="0" width="0.2032" layer="21"/>
+<wire x1="-0.83" y1="0" x2="0.193" y2="-1" width="0.2032" layer="21"/>
+<wire x1="0.193" y1="-1" x2="0.193" y2="1" width="0.2032" layer="21"/>
+<smd name="C" x="-2.2" y="0" dx="2.4" dy="2.4" layer="1"/>
+<smd name="A" x="2.2" y="0" dx="2.4" dy="2.4" layer="1"/>
+<text x="-2.159" y="2.159" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.159" y="-3.429" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-2.794" y1="-1.0922" x2="-2.2606" y2="1.0922" layer="51"/>
+<rectangle x1="2.2606" y1="-1.0922" x2="2.794" y2="1.0922" layer="51"/>
+<rectangle x1="-1.35" y1="-1.9" x2="-0.8" y2="1.9" layer="51"/>
+</package>
 </packages>
 <symbols>
+<symbol name="SCHOTTKY">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="1.27" x2="1.905" y2="1.016" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-1.016" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<text x="-2.286" y="1.905" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.286" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
 <symbol name="HEXFET-N">
 <wire x1="-1.1176" y1="2.413" x2="-1.1176" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="-1.1176" y1="-2.54" x2="-2.54" y2="-2.54" width="0.1524" layer="94"/>
@@ -1021,23 +1053,23 @@ with integrated charge pump</description>
 <devices>
 <device name="EFE" package="TSSOP16EXP">
 <connects>
-<connect gate="G$1" pin="OUT@1" pad="1"/>
-<connect gate="G$1" pin="OUT@2" pad="2"/>
-<connect gate="G$1" pin="OUT@3" pad="3"/>
-<connect gate="G$1" pin="OUT@4" pad="4"/>
-<connect gate="G$1" pin="OUT@5" pad="5"/>
-<connect gate="G$1" pin="OUT@6" pad="6"/>
-<connect gate="G$1" pin="SET" pad="7"/>
-<connect gate="G$1" pin="OUT@7" pad="8"/>
-<connect gate="G$1" pin="OUT@8" pad="9"/>
-<connect gate="G$1" pin="V_CONTROL@1" pad="10"/>
-<connect gate="G$1" pin="V_CONTROL@2" pad="11"/>
-<connect gate="G$1" pin="IN@1" pad="12"/>
-<connect gate="G$1" pin="IN@2" pad="13"/>
-<connect gate="G$1" pin="IN@3" pad="14"/>
-<connect gate="G$1" pin="IN@4" pad="15"/>
-<connect gate="G$1" pin="OUT@9" pad="16"/>
-<connect gate="G$1" pin="OUT@10" pad="EXP"/>
+<connect gate="G$1" pin="OUT@1" 		pad="1"/>
+<connect gate="G$1" pin="OUT@2" 		pad="2"/>
+<connect gate="G$1" pin="OUT@3" 		pad="3"/>
+<connect gate="G$1" pin="OUT@4" 		pad="4"/>
+<connect gate="G$1" pin="OUT@5" 		pad="5"/>
+<connect gate="G$1" pin="OUT@6" 		pad="6"/>
+<connect gate="G$1" pin="SET"   		pad="7"/>
+<connect gate="G$1" pin="OUT@7" 		pad="8"/>
+<connect gate="G$1" pin="OUT@8" 		pad="9"/>
+<connect gate="G$1" pin="V_CONTROL@1" 	pad="10"/>
+<connect gate="G$1" pin="V_CONTROL@2" 	pad="11"/>
+<connect gate="G$1" pin="IN@1" 			pad="12"/>
+<connect gate="G$1" pin="IN@2" 			pad="13"/>
+<connect gate="G$1" pin="IN@3" 			pad="14"/>
+<connect gate="G$1" pin="IN@4" 			pad="15"/>
+<connect gate="G$1" pin="OUT@9" 		pad="16"/>
+<connect gate="G$1" pin="OUT@10" 		pad="EXP"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1059,6 +1091,24 @@ Source: http://www.national.com/ds/LM/LM35.pdf</description>
 <connect gate="G$1" pin="+VS" pad="1"/>
 <connect gate="G$1" pin="GND" pad="3"/>
 <connect gate="G$1" pin="VO" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MBRS240LT3" prefix="D">
+<description>&lt;b&gt;Schottky Power Rectifier&lt;/b&gt;&lt;p&gt;
+Source: http://www.onsemi.com/pub/Collateral/MBRS240LT3-D.PDF</description>
+<gates>
+<gate name="G$1" symbol="SCHOTTKY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SMB-403A">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
