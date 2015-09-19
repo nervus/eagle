@@ -347,17 +347,9 @@ UsedLibrary="/Applications/EAGLE-7.4.0/lbr/xilinx-xcv.lbr"
 UsedLibrary="/Applications/EAGLE-7.4.0/lbr/zetex.lbr"
 UsedLibrary="/Applications/EAGLE-7.4.0/lbr/zilog.lbr"
 UsedLibrary="/Users/nervus/Documents/eagle/nervus/eagle/lbr/E14_Arduino_revB.lbr"
-UsedLibrary="/Users/nervus/Documents/eagle/nervus/eagle/lbr/linear-technology.lbr"
 UsedLibrary="/Users/nervus/Documents/eagle/nervus/eagle/lbr/linear.lbr"
 UsedLibrary="/Users/nervus/Documents/eagle/nervus/eagle/lbr/nervus.lbr"
 UsedLibrary="/Users/nervus/Documents/eagle/lbr/SparkFun-Eagle-Libraries/SparkFun-DigitalIC.lbr"
 
-[Win_1]
-Type="Control Panel"
-Loc="0 23 1086 422"
-State=1
-Number=0
-
 [Desktop]
 Screen="1680 1050"
-Window="Win_1"
