@@ -13996,13 +13996,17 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="0.4064" drill="0">
+<clearance class="0" value="0.2032"/>
 </class>
-<class number="1" name="VCC" width="0" drill="0">
+<class number="1" name="VCC" width="0.4064" drill="0">
+<clearance class="1" value="0.2032"/>
 </class>
-<class number="2" name="AGND" width="0" drill="0">
+<class number="2" name="AGND" width="0.4064" drill="0">
+<clearance class="2" value="0.2032"/>
 </class>
-<class number="3" name="+5V" width="0" drill="0">
+<class number="3" name="+5V" width="0.4064" drill="0">
+<clearance class="3" value="0.2032"/>
 </class>
 </classes>
 <modules>
@@ -14391,7 +14395,6 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="JP6" library="SparkFun" deviceset="M12" device="PTH" value=""/>
 <part name="JP7" library="SparkFun" deviceset="M12" device="PTH" value=""/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X4" device=""/>
-<part name="JP2" library="pinhead" deviceset="PINHD-1X4" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14401,7 +14404,6 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <instance part="JP6" gate="G$1" x="22.86" y="86.36" rot="R180"/>
 <instance part="JP7" gate="G$1" x="-27.94" y="88.9"/>
 <instance part="JP1" gate="A" x="-27.94" y="58.42" rot="MR0"/>
-<instance part="JP2" gate="A" x="22.86" y="58.42"/>
 </instances>
 <busses>
 </busses>
@@ -14506,15 +14508,10 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <label x="-15.24" y="73.66" size="1.778" layer="95"/>
 <pinref part="JP7" gate="G$1" pin="1"/>
 <pinref part="JP1" gate="A" pin="1"/>
-<pinref part="JP2" gate="A" pin="1"/>
 <wire x1="-25.4" y1="63.5" x2="-15.24" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="-15.24" y1="63.5" x2="-7.62" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="63.5" x2="10.16" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="63.5" x2="20.32" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="73.66" x2="-7.62" y2="63.5" width="0.1524" layer="91"/>
-<junction x="-7.62" y="63.5"/>
 <junction x="-15.24" y="63.5"/>
-<junction x="10.16" y="63.5"/>
 </segment>
 </net>
 <net name="DSP_D7" class="0">
@@ -14553,12 +14550,7 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <wire x1="-2.54" y1="83.82" x2="-2.54" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="A" pin="4"/>
 <wire x1="-25.4" y1="55.88" x2="-15.24" y2="55.88" width="0.1524" layer="91"/>
-<junction x="-2.54" y="55.88"/>
 <wire x1="-15.24" y1="55.88" x2="-2.54" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="55.88" x2="10.16" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="4"/>
-<wire x1="10.16" y1="55.88" x2="20.32" y2="55.88" width="0.1524" layer="91"/>
-<junction x="10.16" y="55.88"/>
 <junction x="-15.24" y="55.88"/>
 </segment>
 </net>
@@ -14569,14 +14561,9 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <pinref part="JP7" gate="G$1" pin="4"/>
 <wire x1="-5.08" y1="81.28" x2="-5.08" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="A" pin="3"/>
-<pinref part="JP2" gate="A" pin="3"/>
 <wire x1="-25.4" y1="58.42" x2="-15.24" y2="58.42" width="0.1524" layer="91"/>
-<junction x="-5.08" y="58.42"/>
 <wire x1="-15.24" y1="58.42" x2="-5.08" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="58.42" x2="10.16" y2="58.42" width="0.1524" layer="91"/>
 <junction x="-15.24" y="58.42"/>
-<junction x="10.16" y="58.42"/>
-<wire x1="10.16" y1="58.42" x2="20.32" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DSP_EN" class="0">
@@ -14599,380 +14586,10 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <wire x1="12.7" y1="73.66" x2="0" y2="73.66" width="0.1524" layer="91"/>
 <label x="2.54" y="73.66" size="1.778" layer="95"/>
 <pinref part="JP1" gate="A" pin="2"/>
-<pinref part="JP2" gate="A" pin="2"/>
 <wire x1="-25.4" y1="60.96" x2="-15.24" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="-15.24" y1="60.96" x2="0" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="0" y1="60.96" x2="10.16" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="60.96" x2="20.32" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="0" y1="73.66" x2="0" y2="60.96" width="0.1524" layer="91"/>
-<junction x="0" y="60.96"/>
 <junction x="-15.24" y="60.96"/>
-<junction x="10.16" y="60.96"/>
-</segment>
-</net>
-</nets>
-</sheet>
-</sheets>
-</module>
-<module name="FILTER" prefix="" dx="30.48" dy="15.24">
-<ports>
-<port name="FILT_IN" side="left" coord="0" direction="in"/>
-<port name="FILT_OUT" side="right" coord="0" direction="out"/>
-<port name="AGND" side="bottom" coord="0" direction="pwr"/>
-</ports>
-<variantdefs>
-</variantdefs>
-<parts>
-<part name="R1" library="resistor" deviceset="R-US_" device="R0805" value="100K"/>
-<part name="R2" library="resistor" deviceset="R-US_" device="R0805" value="100K"/>
-<part name="C1" library="resistor" deviceset="C-EU" device="C0805" value="100n"/>
-<part name="C2" library="resistor" deviceset="C-EU" device="C0805" value="100n"/>
-<part name="AGND23" library="supply1" deviceset="AGND" device=""/>
-<part name="AGND24" library="supply1" deviceset="AGND" device=""/>
-<part name="PAD1" library="wirepad" deviceset="2,15/1,0" device=""/>
-</parts>
-<sheets>
-<sheet>
-<plain>
-</plain>
-<instances>
-<instance part="R1" gate="G$1" x="66.04" y="86.36"/>
-<instance part="R2" gate="G$1" x="76.2" y="86.36"/>
-<instance part="C1" gate="G$1" x="71.12" y="81.28"/>
-<instance part="C2" gate="G$1" x="81.28" y="81.28"/>
-<instance part="AGND23" gate="VR1" x="81.28" y="71.12"/>
-<instance part="AGND24" gate="VR1" x="71.12" y="71.12"/>
-<instance part="PAD1" gate="1" x="45.72" y="86.36"/>
-</instances>
-<busses>
-</busses>
-<nets>
-<net name="N$8" class="0">
-<segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="R2" gate="G$1" pin="1"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="71.12" y1="83.82" x2="71.12" y2="86.36" width="0.1524" layer="91"/>
-<junction x="71.12" y="86.36"/>
-</segment>
-</net>
-<net name="FILT_OUT" class="0">
-<segment>
-<pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="96.52" y1="86.36" x2="81.28" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="83.82" x2="81.28" y2="86.36" width="0.1524" layer="91"/>
-<junction x="81.28" y="86.36"/>
-</segment>
-</net>
-<net name="AGND" class="0">
-<segment>
-<pinref part="C2" gate="G$1" pin="2"/>
-<pinref part="AGND23" gate="VR1" pin="AGND"/>
-<wire x1="81.28" y1="73.66" x2="81.28" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C1" gate="G$1" pin="2"/>
-<pinref part="AGND24" gate="VR1" pin="AGND"/>
-<wire x1="71.12" y1="73.66" x2="71.12" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="FILT_IN" class="0">
-<segment>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="48.26" y1="86.36" x2="60.96" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="PAD1" gate="1" pin="P"/>
-</segment>
-</net>
-</nets>
-</sheet>
-</sheets>
-</module>
-<module name="FANDRIVER" prefix="" dx="30.48" dy="15.24">
-<ports>
-<port name="SET" side="left" coord="0" direction="in"/>
-<port name="OUT" side="right" coord="0" direction="out"/>
-<port name="VCC" side="top" coord="0" direction="pwr"/>
-<port name="GND" side="bottom" coord="0" direction="pwr"/>
-</ports>
-<variantdefs>
-</variantdefs>
-<parts>
-<part name="IC1" library="nervus" deviceset="LT3083" device="EFE"/>
-<part name="P+1" library="supply1" deviceset="VCC" device=""/>
-<part name="C1" library="rcl" deviceset="C-EU" device="C0805" value="2.2uF"/>
-<part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="C2" library="rcl" deviceset="C-EU" device="C1206" value="10uF"/>
-</parts>
-<sheets>
-<sheet>
-<plain>
-</plain>
-<instances>
-<instance part="IC1" gate="G$1" x="114.3" y="91.44"/>
-<instance part="P+1" gate="VCC" x="109.22" y="106.68"/>
-<instance part="C1" gate="G$1" x="104.14" y="93.98"/>
-<instance part="GND1" gate="1" x="104.14" y="86.36"/>
-<instance part="GND2" gate="1" x="139.7" y="83.82"/>
-<instance part="C2" gate="G$1" x="139.7" y="91.44"/>
-</instances>
-<busses>
-</busses>
-<nets>
-<net name="OUT" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="OUT@1"/>
-<pinref part="IC1" gate="G$1" pin="OUT@2"/>
-<junction x="134.62" y="93.98"/>
-<pinref part="IC1" gate="G$1" pin="OUT@3"/>
-<pinref part="IC1" gate="G$1" pin="OUT@4"/>
-<pinref part="IC1" gate="G$1" pin="OUT@5"/>
-<pinref part="IC1" gate="G$1" pin="OUT@6"/>
-<pinref part="IC1" gate="G$1" pin="OUT@7"/>
-<pinref part="IC1" gate="G$1" pin="OUT@8"/>
-<pinref part="IC1" gate="G$1" pin="OUT@9"/>
-<pinref part="IC1" gate="G$1" pin="OUT@10"/>
-<wire x1="134.62" y1="93.98" x2="139.7" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="139.7" y1="93.98" x2="149.86" y2="93.98" width="0.1524" layer="91"/>
-<junction x="139.7" y="93.98"/>
-</segment>
-</net>
-<net name="SET" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="SET"/>
-<wire x1="111.76" y1="88.9" x2="111.76" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="76.2" x2="93.98" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="VCC" class="1">
-<segment>
-<pinref part="C1" gate="G$1" pin="1"/>
-<pinref part="IC1" gate="G$1" pin="IN@1"/>
-<wire x1="111.76" y1="93.98" x2="109.22" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="93.98" x2="109.22" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="99.06" x2="104.14" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="V_CONTROL@1"/>
-<wire x1="104.14" y1="96.52" x2="104.14" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="99.06" x2="93.98" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="99.06" x2="111.76" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="P+1" gate="VCC" pin="VCC"/>
-<wire x1="109.22" y1="99.06" x2="109.22" y2="104.14" width="0.1524" layer="91"/>
-<junction x="109.22" y="99.06"/>
-<junction x="104.14" y="99.06"/>
-<pinref part="IC1" gate="G$1" pin="IN@2"/>
-<junction x="111.76" y="93.98"/>
-<pinref part="IC1" gate="G$1" pin="IN@3"/>
-<pinref part="IC1" gate="G$1" pin="IN@4"/>
-<pinref part="IC1" gate="G$1" pin="V_CONTROL@2"/>
-<junction x="111.76" y="99.06"/>
-</segment>
-</net>
-<net name="GND" class="0">
-<segment>
-<pinref part="C1" gate="G$1" pin="2"/>
-<pinref part="GND1" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="GND2" gate="1" pin="GND"/>
-<pinref part="C2" gate="G$1" pin="2"/>
-</segment>
-</net>
-</nets>
-</sheet>
-</sheets>
-</module>
-<module name="AMPLIFIER" prefix="" dx="30.48" dy="121.92">
-<ports>
-<port name="IN1" side="left" coord="53.34" direction="in"/>
-<port name="IN2" side="left" coord="17.78" direction="in"/>
-<port name="IN3" side="left" coord="-17.78" direction="in"/>
-<port name="IN4" side="left" coord="-53.34" direction="in"/>
-<port name="GND" side="bottom" coord="0" direction="pwr"/>
-<port name="VCC" side="top" coord="0" direction="pwr"/>
-<port name="OUT1" side="right" coord="53.34" direction="out"/>
-<port name="OUT2" side="right" coord="17.78" direction="out"/>
-<port name="OUT3" side="right" coord="-17.78" direction="out"/>
-<port name="OUT4" side="right" coord="-53.34" direction="out"/>
-</ports>
-<variantdefs>
-</variantdefs>
-<parts>
-<part name="R1A" library="rcl" deviceset="R-US_" device="R0603" value="14K"/>
-<part name="R2A" library="resistor" deviceset="R-US_" device="R0805" value="10K"/>
-<part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="R1B" library="rcl" deviceset="R-US_" device="R0603" value="14K"/>
-<part name="R2B" library="resistor" deviceset="R-US_" device="R0805" value="10K"/>
-<part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="R1C" library="rcl" deviceset="R-US_" device="R0603" value="14K"/>
-<part name="R2C" library="resistor" deviceset="R-US_" device="R0805" value="10K"/>
-<part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="R1D" library="rcl" deviceset="R-US_" device="R0603" value="14K"/>
-<part name="R2D" library="resistor" deviceset="R-US_" device="R0805" value="10K"/>
-<part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="U$1" library="nervus" deviceset="LT1014" device=""/>
-<part name="GND5" library="supply1" deviceset="GND" device=""/>
-<part name="P+1" library="supply1" deviceset="VCC" device=""/>
-</parts>
-<sheets>
-<sheet>
-<plain>
-</plain>
-<instances>
-<instance part="R1A" gate="G$1" x="12.7" y="152.4"/>
-<instance part="R2A" gate="G$1" x="5.08" y="147.32" rot="R90"/>
-<instance part="GND2" gate="1" x="5.08" y="139.7"/>
-<instance part="R1B" gate="G$1" x="12.7" y="116.84"/>
-<instance part="R2B" gate="G$1" x="5.08" y="111.76" rot="R90"/>
-<instance part="GND1" gate="1" x="5.08" y="104.14"/>
-<instance part="R1C" gate="G$1" x="12.7" y="71.12"/>
-<instance part="R2C" gate="G$1" x="5.08" y="66.04" rot="R90"/>
-<instance part="GND3" gate="1" x="5.08" y="58.42"/>
-<instance part="R1D" gate="G$1" x="12.7" y="25.4"/>
-<instance part="R2D" gate="G$1" x="5.08" y="20.32" rot="R90"/>
-<instance part="GND4" gate="1" x="5.08" y="12.7"/>
-<instance part="U$1" gate="A" x="12.7" y="172.72"/>
-<instance part="U$1" gate="P" x="12.7" y="172.72"/>
-<instance part="U$1" gate="B" x="12.7" y="127"/>
-<instance part="U$1" gate="C" x="12.7" y="81.28"/>
-<instance part="U$1" gate="D" x="12.7" y="35.56"/>
-<instance part="GND5" gate="1" x="12.7" y="162.56"/>
-<instance part="P+1" gate="VCC" x="12.7" y="182.88"/>
-</instances>
-<busses>
-</busses>
-<nets>
-<net name="OUT1" class="0">
-<segment>
-<pinref part="R1A" gate="G$1" pin="2"/>
-<wire x1="17.78" y1="152.4" x2="20.32" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="152.4" x2="20.32" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="172.72" x2="33.02" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="A" pin="OUT"/>
-<junction x="20.32" y="172.72"/>
-</segment>
-</net>
-<net name="IN1" class="0">
-<segment>
-<wire x1="-10.16" y1="175.26" x2="5.08" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="A" pin="+IN"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="R2A" gate="G$1" pin="2"/>
-<wire x1="5.08" y1="170.18" x2="5.08" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="R1A" gate="G$1" pin="1"/>
-<wire x1="5.08" y1="152.4" x2="7.62" y2="152.4" width="0.1524" layer="91"/>
-<junction x="5.08" y="152.4"/>
-<pinref part="U$1" gate="A" pin="-IN"/>
-</segment>
-</net>
-<net name="GND" class="0">
-<segment>
-<pinref part="R2A" gate="G$1" pin="1"/>
-<pinref part="GND2" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="R2B" gate="G$1" pin="1"/>
-<pinref part="GND1" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="R2C" gate="G$1" pin="1"/>
-<pinref part="GND3" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="R2D" gate="G$1" pin="1"/>
-<pinref part="GND4" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="P" pin="V-"/>
-<pinref part="GND5" gate="1" pin="GND"/>
-</segment>
-</net>
-<net name="OUT2" class="0">
-<segment>
-<pinref part="R1B" gate="G$1" pin="2"/>
-<wire x1="17.78" y1="116.84" x2="20.32" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="116.84" x2="20.32" y2="127" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="127" x2="33.02" y2="127" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="B" pin="OUT"/>
-<junction x="20.32" y="127"/>
-</segment>
-</net>
-<net name="IN2" class="0">
-<segment>
-<wire x1="-10.16" y1="129.54" x2="5.08" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="B" pin="+IN"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="R2B" gate="G$1" pin="2"/>
-<wire x1="5.08" y1="124.46" x2="5.08" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="R1B" gate="G$1" pin="1"/>
-<wire x1="5.08" y1="116.84" x2="7.62" y2="116.84" width="0.1524" layer="91"/>
-<junction x="5.08" y="116.84"/>
-<pinref part="U$1" gate="B" pin="-IN"/>
-</segment>
-</net>
-<net name="OUT3" class="0">
-<segment>
-<pinref part="R1C" gate="G$1" pin="2"/>
-<wire x1="17.78" y1="71.12" x2="20.32" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="71.12" x2="20.32" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="81.28" x2="33.02" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="C" pin="OUT"/>
-<junction x="20.32" y="81.28"/>
-</segment>
-</net>
-<net name="IN3" class="0">
-<segment>
-<wire x1="-10.16" y1="83.82" x2="5.08" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="C" pin="+IN"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="R2C" gate="G$1" pin="2"/>
-<wire x1="5.08" y1="78.74" x2="5.08" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="R1C" gate="G$1" pin="1"/>
-<wire x1="5.08" y1="71.12" x2="7.62" y2="71.12" width="0.1524" layer="91"/>
-<junction x="5.08" y="71.12"/>
-<pinref part="U$1" gate="C" pin="-IN"/>
-</segment>
-</net>
-<net name="OUT4" class="0">
-<segment>
-<pinref part="R1D" gate="G$1" pin="2"/>
-<wire x1="17.78" y1="25.4" x2="20.32" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="25.4" x2="20.32" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="35.56" x2="33.02" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="D" pin="OUT"/>
-<junction x="20.32" y="35.56"/>
-</segment>
-</net>
-<net name="IN4" class="0">
-<segment>
-<wire x1="-10.16" y1="38.1" x2="5.08" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="D" pin="+IN"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="R2D" gate="G$1" pin="2"/>
-<wire x1="5.08" y1="33.02" x2="5.08" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="R1D" gate="G$1" pin="1"/>
-<wire x1="5.08" y1="25.4" x2="7.62" y2="25.4" width="0.1524" layer="91"/>
-<junction x="5.08" y="25.4"/>
-<pinref part="U$1" gate="D" pin="-IN"/>
-</segment>
-</net>
-<net name="VCC" class="0">
-<segment>
-<pinref part="U$1" gate="P" pin="V+"/>
-<pinref part="P+1" gate="VCC" pin="VCC"/>
 </segment>
 </net>
 </nets>
@@ -14982,31 +14599,15 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </modules>
 <parts>
 <part name="FRAME2" library="frames" deviceset="LETTER_L" device=""/>
-<part name="AGND23" library="supply1" deviceset="AGND" device=""/>
-<part name="AGND24" library="supply1" deviceset="AGND" device=""/>
-<part name="AGND25" library="supply1" deviceset="AGND" device=""/>
-<part name="AGND26" library="supply1" deviceset="AGND" device=""/>
-<part name="AGND29" library="supply1" deviceset="AGND" device=""/>
-<part name="AGND1" library="supply1" deviceset="AGND" device=""/>
-<part name="AGND2" library="supply1" deviceset="AGND" device=""/>
-<part name="AGND3" library="supply1" deviceset="AGND" device=""/>
-<part name="AGND4" library="supply1" deviceset="AGND" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
 <part name="AGND5" library="supply1" deviceset="AGND" device=""/>
 <part name="AGND6" library="supply1" deviceset="AGND" device=""/>
-<part name="P+4" library="supply1" deviceset="VCC" device=""/>
-<part name="P+5" library="supply1" deviceset="VCC" device=""/>
-<part name="P+6" library="supply1" deviceset="VCC" device=""/>
 <part name="P+7" library="supply1" deviceset="VCC" device=""/>
 <part name="AGND7" library="supply1" deviceset="AGND" device=""/>
 <part name="P+8" library="supply1" deviceset="VCC" device=""/>
 <part name="AGND8" library="supply1" deviceset="AGND" device=""/>
-<part name="+12V" library="wirepad" deviceset="3,17/1,3" device=""/>
-<part name="AGND" library="wirepad" deviceset="3,17/1,3" device=""/>
-<part name="PAD1" library="wirepad" deviceset="3,17/1,3" device=""/>
-<part name="PAD2" library="wirepad" deviceset="3,17/1,3" device=""/>
 <part name="+12V1" library="wirepad" deviceset="3,17/1,3" device=""/>
 <part name="AGND9" library="wirepad" deviceset="3,17/1,3" device=""/>
 </parts>
@@ -15017,46 +14618,20 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <text x="147.32" y="35.56" size="1.778" layer="91">4x temperature control fan speed controller</text>
 </plain>
 <moduleinsts>
-<moduleinst name="FILTER1" module="FILTER" x="78.74" y="175.26"/>
-<moduleinst name="FILTER2" module="FILTER" x="81.28" y="139.7"/>
-<moduleinst name="FILTER3" module="FILTER" x="78.74" y="104.14"/>
-<moduleinst name="FILTER4" module="FILTER" x="78.74" y="68.58"/>
 <moduleinst name="MCU" module="MCU" x="25.4" y="144.78"/>
-<moduleinst name="CONNECTORS_BOARD1" module="CONNECTORS_BOARD" x="215.9" y="121.92"/>
 <moduleinst name="DISPLAY" module="DISPLAY_BOARD" x="20.32" y="78.74"/>
-<moduleinst name="AMPLIFIER1" module="AMPLIFIER" x="124.46" y="121.92"/>
-<moduleinst name="FANDRIVER1" module="FANDRIVER" x="172.72" y="175.26"/>
-<moduleinst name="FANDRIVER2" module="FANDRIVER" x="172.72" y="139.7"/>
-<moduleinst name="FANDRIVER3" module="FANDRIVER" x="172.72" y="104.14"/>
-<moduleinst name="FANDRIVER4" module="FANDRIVER" x="172.72" y="68.58"/>
 </moduleinsts>
 <instances>
 <instance part="FRAME2" gate="G$2" x="142.24" y="7.62"/>
-<instance part="AGND23" gate="VR1" x="78.74" y="160.02"/>
-<instance part="AGND24" gate="VR1" x="78.74" y="124.46"/>
-<instance part="AGND25" gate="VR1" x="78.74" y="88.9"/>
-<instance part="AGND26" gate="VR1" x="78.74" y="53.34"/>
-<instance part="AGND29" gate="VR1" x="124.46" y="53.34"/>
-<instance part="AGND1" gate="VR1" x="172.72" y="160.02"/>
-<instance part="AGND2" gate="VR1" x="172.72" y="124.46"/>
-<instance part="AGND3" gate="VR1" x="172.72" y="88.9"/>
-<instance part="AGND4" gate="VR1" x="172.72" y="53.34"/>
 <instance part="P+1" gate="VCC" x="43.18" y="177.8"/>
 <instance part="P+2" gate="VCC" x="124.46" y="190.5"/>
 <instance part="P+3" gate="VCC" x="172.72" y="190.5"/>
 <instance part="AGND5" gate="VR1" x="33.02" y="53.34"/>
 <instance part="AGND6" gate="VR1" x="43.18" y="114.3"/>
-<instance part="P+4" gate="VCC" x="172.72" y="154.94"/>
-<instance part="P+5" gate="VCC" x="172.72" y="119.38"/>
-<instance part="P+6" gate="VCC" x="172.72" y="83.82"/>
 <instance part="P+7" gate="VCC" x="228.6" y="187.96"/>
 <instance part="AGND7" gate="VR1" x="215.9" y="53.34"/>
 <instance part="P+8" gate="VCC" x="50.8" y="45.72"/>
 <instance part="AGND8" gate="VR1" x="60.96" y="38.1"/>
-<instance part="+12V" gate="1" x="53.34" y="40.64" rot="R180"/>
-<instance part="AGND" gate="1" x="63.5" y="45.72" rot="R180"/>
-<instance part="PAD1" gate="1" x="48.26" y="40.64"/>
-<instance part="PAD2" gate="1" x="58.42" y="45.72"/>
 <instance part="+12V1" gate="1" x="50.8" y="38.1" rot="R90"/>
 <instance part="AGND9" gate="1" x="60.96" y="48.26" rot="R270"/>
 </instances>
@@ -15070,43 +14645,6 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <nets>
 <net name="AGND" class="2">
 <segment>
-<portref moduleinst="FILTER1" port="AGND"/>
-<pinref part="AGND23" gate="VR1" pin="AGND"/>
-</segment>
-<segment>
-<portref moduleinst="FILTER2" port="AGND"/>
-<pinref part="AGND24" gate="VR1" pin="AGND"/>
-<wire x1="81.28" y1="127" x2="78.74" y2="127" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<portref moduleinst="FILTER3" port="AGND"/>
-<pinref part="AGND25" gate="VR1" pin="AGND"/>
-</segment>
-<segment>
-<portref moduleinst="FILTER4" port="AGND"/>
-<pinref part="AGND26" gate="VR1" pin="AGND"/>
-</segment>
-<segment>
-<pinref part="AGND29" gate="VR1" pin="AGND"/>
-<portref moduleinst="AMPLIFIER1" port="GND"/>
-</segment>
-<segment>
-<portref moduleinst="FANDRIVER1" port="GND"/>
-<pinref part="AGND1" gate="VR1" pin="AGND"/>
-</segment>
-<segment>
-<portref moduleinst="FANDRIVER2" port="GND"/>
-<pinref part="AGND2" gate="VR1" pin="AGND"/>
-</segment>
-<segment>
-<portref moduleinst="FANDRIVER3" port="GND"/>
-<pinref part="AGND3" gate="VR1" pin="AGND"/>
-</segment>
-<segment>
-<portref moduleinst="FANDRIVER4" port="GND"/>
-<pinref part="AGND4" gate="VR1" pin="AGND"/>
-</segment>
-<segment>
 <pinref part="AGND5" gate="VR1" pin="AGND"/>
 <portref moduleinst="DISPLAY" port="GND"/>
 </segment>
@@ -15116,16 +14654,12 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <wire x1="43.18" y1="116.84" x2="43.18" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<portref moduleinst="CONNECTORS_BOARD1" port="GND"/>
 <pinref part="AGND7" gate="VR1" pin="AGND"/>
 <wire x1="215.9" y1="55.88" x2="215.9" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="AGND8" gate="VR1" pin="AGND"/>
-<pinref part="AGND" gate="1" pin="P"/>
 <wire x1="60.96" y1="40.64" x2="60.96" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="PAD2" gate="1" pin="P"/>
-<junction x="60.96" y="45.72"/>
 <pinref part="AGND9" gate="1" pin="P"/>
 </segment>
 </net>
@@ -15140,7 +14674,6 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <segment>
 <portref moduleinst="MCU" port="PWM1"/>
 <wire x1="50.8" y1="152.4" x2="50.8" y2="175.26" width="0.1524" layer="91"/>
-<portref moduleinst="FILTER1" port="FILT_IN"/>
 <wire x1="50.8" y1="175.26" x2="58.42" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -15149,8 +14682,6 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <portref moduleinst="MCU" port="PWM2"/>
 <wire x1="50.8" y1="147.32" x2="55.88" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="147.32" x2="55.88" y2="139.7" width="0.1524" layer="91"/>
-<portref moduleinst="FILTER2" port="FILT_IN"/>
-<wire x1="55.88" y1="139.7" x2="60.96" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
@@ -15158,7 +14689,6 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <portref moduleinst="MCU" port="PWM3"/>
 <wire x1="50.8" y1="142.24" x2="53.34" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="142.24" x2="53.34" y2="104.14" width="0.1524" layer="91"/>
-<portref moduleinst="FILTER3" port="FILT_IN"/>
 <wire x1="53.34" y1="104.14" x2="58.42" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -15166,107 +14696,18 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <segment>
 <portref moduleinst="MCU" port="PWM4"/>
 <wire x1="50.8" y1="137.16" x2="50.8" y2="68.58" width="0.1524" layer="91"/>
-<portref moduleinst="FILTER4" port="FILT_IN"/>
 <wire x1="50.8" y1="68.58" x2="58.42" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$45" class="0">
-<segment>
-<portref moduleinst="FILTER1" port="FILT_OUT"/>
-<portref moduleinst="AMPLIFIER1" port="IN1"/>
-<wire x1="99.06" y1="175.26" x2="104.14" y2="175.26" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$46" class="0">
-<segment>
-<portref moduleinst="FILTER2" port="FILT_OUT"/>
-<wire x1="101.6" y1="139.7" x2="104.14" y2="139.7" width="0.1524" layer="91"/>
-<portref moduleinst="AMPLIFIER1" port="IN2"/>
-</segment>
-</net>
-<net name="N$47" class="0">
-<segment>
-<portref moduleinst="FILTER3" port="FILT_OUT"/>
-<wire x1="99.06" y1="104.14" x2="104.14" y2="104.14" width="0.1524" layer="91"/>
-<portref moduleinst="AMPLIFIER1" port="IN3"/>
-</segment>
-</net>
-<net name="N$48" class="0">
-<segment>
-<portref moduleinst="FILTER4" port="FILT_OUT"/>
-<wire x1="99.06" y1="68.58" x2="104.14" y2="68.58" width="0.1524" layer="91"/>
-<portref moduleinst="AMPLIFIER1" port="IN4"/>
-</segment>
-</net>
-<net name="N$49" class="0">
-<segment>
-<portref moduleinst="FANDRIVER1" port="SET"/>
-<wire x1="152.4" y1="175.26" x2="154.94" y2="175.26" width="0.1524" layer="91"/>
-<portref moduleinst="AMPLIFIER1" port="OUT1"/>
-<wire x1="144.78" y1="175.26" x2="152.4" y2="175.26" width="0.1524" layer="91"/>
-<junction x="152.4" y="175.26"/>
-</segment>
-</net>
-<net name="N$50" class="0">
-<segment>
-<wire x1="144.78" y1="139.7" x2="152.4" y2="139.7" width="0.1524" layer="91"/>
-<portref moduleinst="AMPLIFIER1" port="OUT2"/>
-<portref moduleinst="FANDRIVER2" port="SET"/>
-<junction x="152.4" y="139.7"/>
-</segment>
-</net>
-<net name="N$51" class="0">
-<segment>
-<wire x1="144.78" y1="104.14" x2="152.4" y2="104.14" width="0.1524" layer="91"/>
-<portref moduleinst="AMPLIFIER1" port="OUT3"/>
-<portref moduleinst="FANDRIVER3" port="SET"/>
-<junction x="152.4" y="104.14"/>
-</segment>
-</net>
-<net name="N$52" class="0">
-<segment>
-<wire x1="144.78" y1="68.58" x2="152.4" y2="68.58" width="0.1524" layer="91"/>
-<portref moduleinst="AMPLIFIER1" port="OUT4"/>
-<portref moduleinst="FANDRIVER4" port="SET"/>
-<junction x="152.4" y="68.58"/>
-</segment>
-</net>
 <net name="VCC" class="1">
-<segment>
-<portref moduleinst="AMPLIFIER1" port="VCC"/>
-<pinref part="P+2" gate="VCC" pin="VCC"/>
-</segment>
-<segment>
-<portref moduleinst="FANDRIVER1" port="VCC"/>
-<pinref part="P+3" gate="VCC" pin="VCC"/>
-</segment>
-<segment>
-<portref moduleinst="FANDRIVER2" port="VCC"/>
-<pinref part="P+4" gate="VCC" pin="VCC"/>
-</segment>
-<segment>
-<portref moduleinst="FANDRIVER3" port="VCC"/>
-<pinref part="P+5" gate="VCC" pin="VCC"/>
-</segment>
-<segment>
-<portref moduleinst="FANDRIVER4" port="VCC"/>
-<pinref part="P+6" gate="VCC" pin="VCC"/>
-</segment>
-<segment>
-<portref moduleinst="CONNECTORS_BOARD1" port="VCC"/>
-<pinref part="P+7" gate="VCC" pin="VCC"/>
-</segment>
 <segment>
 <portref moduleinst="MCU" port="VIN"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
 <wire x1="43.18" y1="175.26" x2="43.18" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="+12V" gate="1" pin="P"/>
 <pinref part="P+8" gate="VCC" pin="VCC"/>
 <wire x1="50.8" y1="40.64" x2="50.8" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="PAD1" gate="1" pin="P"/>
-<junction x="50.8" y="40.64"/>
 <pinref part="+12V1" gate="1" pin="P"/>
 </segment>
 </net>
@@ -15318,7 +14759,6 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <wire x1="7.62" y1="193.04" x2="7.62" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<portref moduleinst="CONNECTORS_BOARD1" port="T1"/>
 <wire x1="215.9" y1="193.04" x2="215.9" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -15328,7 +14768,6 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <wire x1="10.16" y1="193.04" x2="10.16" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<portref moduleinst="CONNECTORS_BOARD1" port="T2"/>
 <wire x1="218.44" y1="193.04" x2="218.44" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -15338,7 +14777,6 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <wire x1="12.7" y1="193.04" x2="12.7" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<portref moduleinst="CONNECTORS_BOARD1" port="T3"/>
 <wire x1="220.98" y1="193.04" x2="220.98" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -15348,7 +14786,6 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <wire x1="15.24" y1="193.04" x2="15.24" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<portref moduleinst="CONNECTORS_BOARD1" port="T4"/>
 <wire x1="223.52" y1="193.04" x2="223.52" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -15358,7 +14795,6 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <wire x1="22.86" y1="193.04" x2="22.86" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<portref moduleinst="CONNECTORS_BOARD1" port="TACH1"/>
 <wire x1="203.2" y1="193.04" x2="203.2" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -15368,7 +14804,6 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <wire x1="25.4" y1="193.04" x2="25.4" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<portref moduleinst="CONNECTORS_BOARD1" port="TACH2"/>
 <wire x1="205.74" y1="193.04" x2="205.74" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -15378,7 +14813,6 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <wire x1="27.94" y1="193.04" x2="27.94" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<portref moduleinst="CONNECTORS_BOARD1" port="TACH3"/>
 <wire x1="208.28" y1="193.04" x2="208.28" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -15388,44 +14822,13 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <wire x1="30.48" y1="193.04" x2="30.48" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<portref moduleinst="CONNECTORS_BOARD1" port="TACH4"/>
 <wire x1="210.82" y1="193.04" x2="210.82" y2="185.42" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<portref moduleinst="FANDRIVER4" port="OUT"/>
-<portref moduleinst="CONNECTORS_BOARD1" port="FAN4"/>
-<wire x1="193.04" y1="68.58" x2="195.58" y2="68.58" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<portref moduleinst="FANDRIVER3" port="OUT"/>
-<portref moduleinst="CONNECTORS_BOARD1" port="FAN3"/>
-<wire x1="193.04" y1="104.14" x2="195.58" y2="104.14" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<portref moduleinst="FANDRIVER2" port="OUT"/>
-<portref moduleinst="CONNECTORS_BOARD1" port="FAN2"/>
-<wire x1="193.04" y1="139.7" x2="195.58" y2="139.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<portref moduleinst="FANDRIVER1" port="OUT"/>
-<portref moduleinst="CONNECTORS_BOARD1" port="FAN1"/>
-<wire x1="193.04" y1="175.26" x2="195.58" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,1@AMPLIFIER,12.7,180.34,U$1P,V+,VCC,,,"/>
-<approved hash="104,1@AMPLIFIER,12.7,165.1,U$1P,V-,GND,,,"/>
 <approved hash="106,1@CONNECTORS_BOARD,48.26,114.3,VCC,,,,,"/>
 <approved hash="106,1@CONNECTORS_BOARD,48.26,101.6,VCC,,,,,"/>
 <approved hash="106,1@CONNECTORS_BOARD,48.26,86.36,VCC,,,,,"/>
@@ -15456,7 +14859,6 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <approved hash="113,1@CONNECTORS_BOARD,58.279,74.8326,PAD11,,,,,"/>
 <approved hash="113,1@MCU,-25.6371,61.0912,JP1,,,,,"/>
 <approved hash="113,1@MCU,20.5571,61.0912,JP2,,,,,"/>
-<approved hash="113,1@FILTER,47.9806,87.5326,PAD1,,,,,"/>
 <approved hash="118,1@DISPLAY_BOARD,67.31,119.38,Net,VCC,,,,"/>
 <approved hash="118,1@DISPLAY_BOARD,86.36,121.92,Net,GND,,,,"/>
 <approved hash="118,1@DISPLAY_BOARD,82.55,91.44,Net,RS,,,,"/>
@@ -15479,23 +14881,6 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <approved hash="118,1@CONNECTORS_BOARD,45.72,83.82,Net,T3,,,,"/>
 <approved hash="118,1@CONNECTORS_BOARD,45.72,66.04,Net,T4,,,,"/>
 <approved hash="118,1@CONNECTORS_BOARD,45.72,114.3,Net,VCC,,,,"/>
-<approved hash="118,1@FILTER,54.61,86.36,Net,FILT_IN,,,,"/>
-<approved hash="118,1@FILTER,88.9,86.36,Net,FILT_OUT,,,,"/>
-<approved hash="118,1@FILTER,81.28,74.93,Net,AGND,,,,"/>
-<approved hash="118,1@FANDRIVER,111.76,82.55,Net,SET,,,,"/>
-<approved hash="118,1@FANDRIVER,137.16,93.98,Net,OUT,,,,"/>
-<approved hash="118,1@FANDRIVER,110.49,93.98,Net,VCC,,,,"/>
-<approved hash="118,1@FANDRIVER,104.14,89.1794,Net,GND,,,,"/>
-<approved hash="118,1@AMPLIFIER,-2.54,175.26,Net,IN1,,,,"/>
-<approved hash="118,1@AMPLIFIER,-2.54,129.54,Net,IN2,,,,"/>
-<approved hash="118,1@AMPLIFIER,-2.54,83.82,Net,IN3,,,,"/>
-<approved hash="118,1@AMPLIFIER,-2.54,38.1,Net,IN4,,,,"/>
-<approved hash="118,1@AMPLIFIER,5.08,142.519,Net,GND,,,,"/>
-<approved hash="118,1@AMPLIFIER,12.7,178.791,Net,VCC,,,,"/>
-<approved hash="118,1@AMPLIFIER,19.05,152.4,Net,OUT1,,,,"/>
-<approved hash="118,1@AMPLIFIER,19.05,116.84,Net,OUT2,,,,"/>
-<approved hash="118,1@AMPLIFIER,19.05,71.12,Net,OUT3,,,,"/>
-<approved hash="118,1@AMPLIFIER,19.05,25.4,Net,OUT4,,,,"/>
 </errors>
 </schematic>
 </drawing>
